@@ -497,6 +497,7 @@ module.exports = function createGame(options) {
         state.roles = ['duke', 'captain', 'assassin', 'contessa'];
         if (gameStats.gameType === 'inquisitors' || gameStats.gameType == 'reformation') {
             state.roles.push('inquisitor');
+            state.roles.push('ambassador');
         }
         else {
             state.roles.push('ambassador');
